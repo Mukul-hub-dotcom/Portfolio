@@ -198,6 +198,45 @@
         <br />
         <br />
         <br />
+        <div class="project1" id="proj5">
+          <img src="images/flipkart-clone.png" alt="flipkart" />
+          <div class="projdetals">
+            <h1>Flipkart Clone</h1>
+            <p class="hidetxt">
+              Flipkart Clone is a virtual ecommerce app where you can checkout
+              and order new items
+            </p>
+            <ul>
+              <li>
+                It has login,signup,search,order,add to cart,payment and logout
+                functionality
+              </li>
+              <li>
+                Tech Stack Used
+                <ul style="list-style-type: circle">
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>Mongodb</li>
+                  <li>Bootstrap</li>
+                  <li>ExpressJs</li>
+                  <li>Material-ui</li>
+                  <li>Paytm checksum</li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="btns">
+              <a
+                target="_blank"
+                href="https://github.com/Mukul-hub-dotcom/flipkartClone"
+                >Github</a
+              >
+              <a target="_blank" href="https://flipkart-clonne.netlify.app/"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
         <div class="project1" id="proj4">
           <img src="images/project4.jpeg" alt="foodie" />
           <div class="projdetals">
@@ -407,6 +446,7 @@
       var proj2 = document.getElementById("proj2");
       var proj3 = document.getElementById("proj3");
       var proj4 = document.getElementById("proj4");
+      var proj5 = document.getElementById("proj5");
       var home = document.getElementById("home");
       window.addEventListener("scroll", () => {
         var top = (window.scrollY / body.offsetHeight) * 100;
@@ -432,25 +472,30 @@
           softskills.style.opacity = "0";
         }
         if (top > 44) {
+          proj5.style.transform = "translateX(0)";
+        } else {
+          proj5.style.transform = "translateX(100vw)";
+        }
+        if (top > 46) {
           proj4.style.transform = "translateX(0)";
         } else {
-          proj4.style.transform = "translateX(100vw)";
+          proj4.style.transform = "translateX(-100vw)";
         }
 
         if (top > 52) {
           proj1.style.transform = "translateX(0)";
         } else {
-          proj1.style.transform = "translateX(-100vw)";
+          proj1.style.transform = "translateX(100vw)";
         }
         if (top > 60) {
           proj2.style.transform = "translateX(0)";
         } else {
-          proj2.style.transform = "translateX(100vw)";
+          proj2.style.transform = "translateX(-100vw)";
         }
         if (top > 63) {
           proj3.style.transform = "translateX(0)";
         } else {
-          proj3.style.transform = "translateX(-100vw)";
+          proj3.style.transform = "translateX(100vw)";
         }
       });
 
